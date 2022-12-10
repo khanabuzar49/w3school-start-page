@@ -180,6 +180,11 @@ a, button {
     display: inline-block;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* Header Styling */
 header {
     background-color: #f44336;
@@ -193,6 +198,7 @@ header {
 
 nav ul li {
     display: inline-block;
+    margin-left: -3px;
 }
 
 nav ul li a {
@@ -204,6 +210,9 @@ nav ul li a {
     transition: .2s ease-in-out;
 }
 
+nav ul li:first-child {
+    margin: 0;
+}
 nav ul li a:hover,
 .active {
     background-color: #fff;
@@ -241,4 +250,47 @@ h1 {
 .banner button:hover {
     background-color: #ccc;
     color: #000;
+}   
+/* Anchor & Cup Section Stylings */
+.anchor-section .wrapper,
+.cup-section .wrapper {
+    width: 64.5%;
+    margin: 0 auto;
+}
+.anchor-details,
+.anchor-img,
+.cup-details,
+.cup-img {
+    display: inline-block;
+}
+.anchor-details,
+.cup-details {
+    width: 66%;
+}
+.anchor-img,
+.cup-img {
+    width: 33%;
+}
+.anchor-details h3,
+.cup-details h3 {
+    font-size: 36px;
+    padding-top: 74px;
+}
+.anchor-details p,
+.cup-details p {
+    color: #757575;
+    font-size: 15px;
+    margin-top: 47px;
+    margin-bottom: 79px;
+}
+.anchor-details h3 + p,
+.cup-details h3 + p {
+    color: #000;;
+    margin-top: 42px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.cup-section {
+    background-color: #f1f1f1;
 }
