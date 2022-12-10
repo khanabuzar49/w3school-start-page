@@ -176,7 +176,8 @@ button {
     outline: none;
 }
 
-a, button {
+a,
+button {
     display: inline-block;
 }
 
@@ -213,6 +214,7 @@ nav ul li a {
 nav ul li:first-child {
     margin: 0;
 }
+
 nav ul li a:hover,
 .active {
     background-color: #fff;
@@ -232,7 +234,7 @@ h1 {
     font-weight: 400;
 }
 
-.banner  p {
+.banner p {
     font-size: 24px;
     margin-top: 24px;
 }
@@ -247,35 +249,42 @@ h1 {
     vertical-align: top;
     /* border: 1px solid transparent; */
 }
+
 .banner button:hover {
     background-color: #ccc;
     color: #000;
-}   
+}
+
 /* Anchor & Cup Section Stylings */
 .anchor-section .wrapper,
 .cup-section .wrapper {
     width: 64.5%;
     margin: 0 auto;
 }
+
 .anchor-details,
 .anchor-img,
 .cup-details,
 .cup-img {
     display: inline-block;
 }
+
 .anchor-details,
 .cup-details {
     width: 66%;
 }
+
 .anchor-img,
 .cup-img {
     width: 33%;
 }
+
 .anchor-details h3,
 .cup-details h3 {
     font-size: 36px;
     padding-top: 74px;
 }
+
 .anchor-details p,
 .cup-details p {
     color: #757575;
@@ -283,9 +292,11 @@ h1 {
     margin-top: 47px;
     margin-bottom: 79px;
 }
-.anchor-details h3 + p,
-.cup-details h3 + p {
-    color: #000;;
+
+.anchor-details h3+p,
+.cup-details h3+p {
+    color: #000;
+    ;
     margin-top: 42px;
     font-size: 18px;
     margin-bottom: 0;
@@ -294,6 +305,7 @@ h1 {
 .cup-section {
     background-color: #f1f1f1;
 }
+
 /* Quote of the Day Section */
 .quote-section h3 {
     background-color: #000;
@@ -302,4 +314,33 @@ h1 {
     text-align: center;
     opacity: 0.60;
     padding: 80px 0;
+}
+
+/* Footer Section Stylings */
+footer {
+    text-align: center;
+    color: #000;
+    opacity: .6;
+    padding: 96px 0 78px;
+}
+
+footer li {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 1.5px;
+}
+
+footer li:last-child {
+    margin-right: 0;
+}
+
+footer li a:hover {
+    opacity: .6;
+}
+footer p {
+    font-size: 15px;
+    margin-top: 47px
+}
+footer p a {
+    text-decoration: underline;
 }
