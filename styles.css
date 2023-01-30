@@ -196,12 +196,21 @@ header {
     right: 0;
     z-index: 2;
 }
-
+nav{
+    display: flex;
+}
 nav ul li {
     display: inline-block;
     margin-left: -3px;
 }
-
+nav div{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 12px 24px;
+    transition: .2s ease-in-out;
+}
 nav ul li a {
     background-color: #f44336;
     color: #fff;
@@ -220,7 +229,22 @@ nav ul li a:hover,
     background-color: #fff;
     color: #000;
 }
-
+.toggle-button{
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 17px;
+    height: 13px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
 /* Banner Section Styling */
 .banner {
     background-color: #f44336;
@@ -277,6 +301,9 @@ h1 {
 .anchor-img,
 .cup-img {
     width: 33%;
+    color: #f44336;
+    text-align: center;
+    font-size: 200px;
 }
 
 .anchor-details h3,
@@ -343,4 +370,64 @@ footer p {
 }
 footer p a {
     text-decoration: underline;
+}
+@media (max-width: 428px){
+    ul{
+        display: none;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button:hover ~ .nav-bar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    /* .nav-bar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    } */
+    .nav-bar li a{
+        background-color: #fff;
+        color: #000;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+    }
+    .nav-bar li{
+        background-color: #fff;
+    }
+    nav div{
+        font-size: 18px;
+        padding: 12px 24px;
+        font-family: 'Montserrat';
+        display: inline-block;
+        background-color: white;
+    }
+    .banner h1{
+        padding: 0px 14px;
+    }
+    .anchor-section .wrapper, .cup-section .wrapper{
+        width: 100%;
+    }
+    .anchor-details h3, .cup-details h3{
+        padding-left: 16px;
+    }
+    .anchor-details p, .cup-details p{
+        padding-left: 16px;
+        width: 100%;
+    }
+    .anchor-details, .cup-details{
+        width: 92%;
+    }
+    .anchor-img,
+    .cup-img{
+        text-align: center;
+        padding-left: 90px;
+    }
 }
